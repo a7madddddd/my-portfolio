@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo {
+    text-decoration: none;
+    color: rgb(204, 0, 0);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    color: rgb(204, 0, 0);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+
+}
+
+.navigation a:hover {
+    font-size: 1.5em;
+    color: lightsalmon;
+    text-transform: uppercase;
+    text-decoration: underline;
+    transition: 0.5s linear;
+
+}
+
+section {
+    padding: 100px 200px;
+}
+
+/*  */
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#my-image {
+    width: 30%;
+    border: 3px solid #000;
+    border-radius: 1000px;
+    transition: 0.7s ease;
+    margin-left: 10%;
+}
+
+#my-image:hover {
+    transform: scale(0.7);
+    border: 10px solid rgb(204, 0, 0);
+}
+
+.main h2 {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    color: rgb(204, 0, 0);
+    font-size: 2.8em;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.main h3 {
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: white;
+    background-color: rgb(204, 0, 0);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: brown;
+    font-size: 1.3em;
+    
+}
+
+.social-icons a {
+    color: white;
+    font-size: 3em;
+    padding-right: 30px;
+    transition: 0.3s linear;
+}
+
+.social-icons a:hover {
+    font-size: 4em;
+    transform: scale(1.1);
+}
+
+/*  */
+.title {
+    display: flex;
+    justify-content: center;
+    color: rgb(204, 0, 0);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*  */
+.card {
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1/ 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.cards .card img {
+    width: fit-content;
+    border: 1px solid white;
+    border-radius: 200px;
+}
+
+.card:hover {
+    background-color: rgb(204, 0, 0);
+    transform: scale(1.1);
+}
+
+.icon {
+    color: rgb(204, 0, 0);
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.infi h3 {
+    color: rgb(204, 0, 0);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects {
+    background-color: #000016;
+    border: 2px solid black;
+    border-radius: 30px;
+
+}
+
+.projects .content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-img {
+    width: 100%;
+    opacity: 0.9;
+}
+
+.project-img img {
+    width: 100%;
+    height: auto;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-card .p, .project-category {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: rgb(204, 0, 0);
+}
+
+.more-details:hover {
+    color: rgb(204, 0, 0);
+}
+
+/*  */
+
+.skills {
+    background-color: white;
+    border-radius: 30px;
+
+}
+
+.skills .content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.skills-card {
+    background-color: black;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 16em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.skills-card:hover {
+    transform: scale(1.1);
+    cursor: wait;
+}
+
+.skills-card:hover .skills-img {
+    width: 100%;
+    opacity: 0.9;
+
+}
+
+.skills-img img {
+    width: 100%;
+    height: auto;
+}
+
+.skills-info {
+    padding: 1em;
+}
+
+
+.skills-category {
+    color: white;
+    padding: 1em;
+}
+
+.skills-category {
+    font-size: 0.8em;
+    padding-bottom: 2px;
+}
+
+.skills-title {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: rgb(204, 0, 0);
+}
+
+.more-details:hover {
+    color: rgb(204, 0, 0);
+}
+
+/*  */
+
+.about-us {
+    justify-content: center;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 30px;
+    max-height: 40%;
+}
+
+.about-us-card {
+    display: flex;
+    width: 110%;
+    background-color: white;
+    border: 10px solid rgb(204, 0, 0);
+    max-height: 10em;
+    border-radius: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: -6%;
+    transition: 0.7s ease;
+
+}
+
+.about-us-card:hover {
+    transform: scale(1.1);
+}
+
+.about-us h3 {
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+.about-us .about-us-category {
+    font-size: 1em;
+    color: black;
+    padding: 10px;
+    margin-left: 5%;
+}
+
+.about-us-img img {
+    width: 150%;
+    height: 143px;
+    border-radius: 4px;
+}
+
+.about-us h1 {
+    color: rgb(204, 0, 0);
+    text-align: center;
+    font-weight: 1000;
+    font-size: xx-large;
+    margin: 20px;
+    margin-top: -5%;
+}
+
+/*  */
+.content .card {
+    width: 20%;
+    height: auto;
+}
+
+.contact .icon {
+    font-size: 4.5em;
+}
+
+.content .card img {
+    width: 70%
+}
+
+.contact .info h3 {
+    color: #000
+}
+
+.contact .info p {
+    font-size: 1.5em;
+}
+
+/*  */
+.footer {
+    height: 300px;
+    border: 5px solid;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: start;
+
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer button {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 1.5em;
+    width: 25%;
+    margin: 20px;
+    margin-left: -10%;
+    max-height: 70%;
+    transition: 1s linear;
+    border: 4px;
+    border-radius: 50px;
+
+}
+
+.footer button:hover {
+    text-decoration: underline;
+    transform: scale(0.7);
+    color: white;
+    background-color: rgb(204, 0, 0);
+    cursor: not-allowed;
+    transform: 1s ease;
+}
+
+/*  */
+
+iframe {
+    width: 228%;
+    height: 115%;
+    margin-left: -130%;
+    margin-top: -20px;
+    border-radius: 20px;
+}
+
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0 12 px 0 0;
+    padding-left: 180px;
+}
+
+@media (max-width:1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .content {
+        justify-content: space-between;
+    }
+
+    .more-content h2 {
+        font-size: 1em;
+    }
+
+    .more-content h3 {
+        font-size: 1.6em;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.cards-contact img {
+    width: fit-content;
+    border: 1px;
+    border-radius: 20px;
+}
+
+@media (max-width:641px) {
+    body {
+        font-size: 12px;
+    }
+
+    .main-content h2 {
+        font-size: 0.8em;
+    }
+
+    .main-content h3 {
+        font-size: 0.4em;
+    }
+
+    header {
+        width: 100%;
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    .main {
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    #my-image {
+        margin-left: -20px;
+    }
+
+    .footer button {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        font-size: 0.7em;
+        width: 50%;
+        margin-top: auto;
+        max-height: 30%;
+        padding-left: 15%;
+        margin-left: 5px;
+        justify-content: start;
+        /* justify-items: start; */
+    }
+
+    .projects {
+        width: 100%;
+    }
+
+    .project-card {
+        margin-left: 59px;
+    }
+
+    .skills-card {
+        margin-left: -20px;
+        justify-content: space-evenly;
+    }
+
+    .about-us {
+        width: 100%
+    }
+
+    .about-us-card {
+        display: flex;
+
+        width: 107%;
+        background-color: white;
+        border: 10px solid rgb(204, 0, 0);
+        max-height: 10em;
+        border-radius: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-left: -9px;
+        transition: 0.7s ease;
+    }
+
+    .about-us .about-us-category {
+        font-size: 0.5em;
+        color: black;
+        padding: 10px;
+        margin-left: 10%;
+    }
+
+    .about-us-img img {
+        width: 150%;
+        height: 107px;
+        border-radius: 4px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    iframe {
+        width: 220%;
+        height: 115%;
+        margin-left: -0%;
+        margin-top: -20px;
+        border-radius: 20px;
+        margin-left: -90px;
+    }
+
+    .content .card {
+        width: 40%;
+        height: auto;
+        justify-content: center;
+        margin-left: -3px;
+    }
+}
